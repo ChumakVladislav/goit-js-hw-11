@@ -15,6 +15,7 @@ loader.style.display = 'none';
 //Отримання і відмальовка фото
 function onFormSuccess(e) {
   e.preventDefault();
+  gallery.innerHTML = '';
   loader.style.display = 'block';
 
   searchImage(e.target.elements.searchQuery.value);
